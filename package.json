@@ -1,0 +1,101 @@
+{
+  "name": "react-native-modalize-webview",
+  "version": "0.0.0-development",
+  "description": "",
+  "keywords": [
+    "react native",
+    "modalize",
+    "modal",
+    "webview",
+    "alka"
+  ],
+  "homepage": "https://github.com/alkafinance/react-native-modalize-webview#readme",
+  "bugs": {
+    "url": "https://github.com/alkafinance/react-native-modalize-webview/issues"
+  },
+  "license": "MIT",
+  "author": "Ayan Yenbekbay <ayan@alka.app>",
+  "files": [
+    "dist/"
+  ],
+  "main": "dist/index.js",
+  "react-native": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alkafinance/react-native-modalize-webview.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit --pretty",
+    "lint": "eslint --ext .js,.ts,.tsx --cache .",
+    "test": "run-p --silent --print-label typecheck lint",
+    "bootstrap": "yarn --cwd example && yarn",
+    "build": "rm -rf dist && yarn tsc --pretty --declaration --outDir dist",
+    "example": "yarn --cwd example",
+    "prepublishOnly": "yarn build",
+    "presemantic-release": "yarn build",
+    "semantic-release": "semantic-release"
+  },
+  "prettier": {
+    "bracketSpacing": false,
+    "jsxBracketSameLine": true,
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "useTabs": false
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -e",
+      "pre-push": "yarn test"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,ts,tsx,json,yml,yaml}": [
+      "prettier --write",
+      "git add"
+    ],
+    "**/*.{js,ts,tsx}": [
+      "eslint --ext .js,.ts,.tsx --cache --fix",
+      "git add"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-modalize": "1.2.0",
+    "react-native-webview": "*"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@alkafinance/eslint-config": "^1.0.1",
+    "@alkafinance/eslint-config-react": "^1.0.0",
+    "@alkafinance/eslint-config-typescript": "^1.0.0",
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "@types/react": "16.8.23",
+    "@types/react-native": "0.60.2",
+    "eslint": "5.10.0",
+    "husky": "^3.0.1",
+    "lint-staged": "^9.2.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.18.2",
+    "react-native-modalize": "1.2.0",
+    "react-native-webview": "~5.8.1",
+    "semantic-release": "^15.13.18",
+    "typescript": "^3.5.3",
+    "utility-types": "^3.7.0"
+  }
+}
