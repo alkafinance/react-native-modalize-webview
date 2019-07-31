@@ -6,7 +6,7 @@
 ![MIT License](https://img.shields.io/npm/l/react-native-modalize-webview.svg)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-React Native JS-only amount (decimal) input component. Optimized for iOS.
+React Native modal component that brings swipe to dismiss to WebView.
 
 <img src="./.github/demo.gif" width="auto" height="640">
 

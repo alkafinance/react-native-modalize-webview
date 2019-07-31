@@ -1,7 +1,7 @@
 {
   "name": "react-native-modalize-webview",
   "version": "0.0.0-development",
-  "description": "",
+  "description": "React Native modal component that brings swipe to dismiss to WebView",
   "keywords": [
     "react native",
     "modalize",
