@@ -1,10 +1,11 @@
 # react-native-modalize-webview
 
-[![npm package](https://img.shields.io/npm/v/react-native-modalize-webview.svg)](https://www.npmjs.org/package/react-native-modalize-webview)
+[![npm version](https://img.shields.io/npm/v/react-native-modalize-webview.svg)](https://www.npmjs.org/package/react-native-modalize-webview)
 [![CircleCI Status](https://img.shields.io/circleci/project/github/alkafinance/react-native-modalize-webview/master.svg)](https://circleci.com/gh/alkafinance/workflows/react-native-modalize-webview/tree/master)
+![license: MIT](https://img.shields.io/npm/l/react-native-modalize-webview.svg)
 ![Supports iOS](https://img.shields.io/badge/platforms-ios-lightgrey.svg)
-![MIT License](https://img.shields.io/npm/l/react-native-modalize-webview.svg)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 React Native modal component that brings swipe to dismiss to WebView.
 
