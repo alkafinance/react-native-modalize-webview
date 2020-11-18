@@ -94,7 +94,7 @@
     "prettier": "^1.18.2",
     "react-native-modalize": "1.2.0",
     "react-native-webview": "~5.8.1",
-    "semantic-release": "^15.13.18",
+    "semantic-release": "^17.2.3",
     "typescript": "^3.5.3",
     "utility-types": "^3.7.0"
   }
